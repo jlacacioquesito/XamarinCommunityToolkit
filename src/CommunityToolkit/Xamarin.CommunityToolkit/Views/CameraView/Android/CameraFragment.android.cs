@@ -998,7 +998,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 
 		int GetCaptureOrientation()
 		{
-			var frontOffset = cameraType == LensFacing.Front ? 90 : -90;
+			var frontOffset = cameraType == LensFacing.Front ? 0 : -90;
 			return (360 + sensorOrientation - GetDisplayRotationDegrees() + frontOffset) % 360;
 		}
 
